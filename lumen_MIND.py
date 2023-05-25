@@ -4,7 +4,7 @@ import random as rdm
 
 def random_gpg(mean: float, std: float):
     gpg = rdm.gauss(mean,std)
-    return gpg
+    return round(gpg,2)
 
 # Immagine di intestazione presa da un URL di GitHub
 # header_image_url = 'https://raw.githubusercontent.com/NOME_UTENTE/NOME_REPOSITORY/master/immagine.jpg'

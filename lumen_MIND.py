@@ -8,17 +8,17 @@ def random_gpg(mean: float, std: float):
 
 def cite():
     # Add a button to your Streamlit app
-    if st.button('Click me!'):
+    if st.button('Clicca qui per citare questo report'):
         # When the button is clicked, execute the JavaScript code
         st.markdown(
-            """
+            """ 
             <script>
             function showAlert() {
                 alert('Progetto HOLOS: Gender equality @MIND (2023), Fondazione Triulza');
             }
             </script>
-            """
-            , unsafe_allow_html=True)
+            """,
+            unsafe_allow_html=True)
         
         # Call the JavaScript function to display the alert
         st.markdown('<script>showAlert();</script>', unsafe_allow_html=True)

@@ -6,6 +6,23 @@ def random_gpg(mean: float, std: float):
     gpg = rdm.gauss(mean,std)
     return round(gpg,2)
 
+def cite():
+    # Add a button to your Streamlit app
+    if st.button('Click me!'):
+        # When the button is clicked, execute the JavaScript code
+        st.markdown(
+            """
+            <script>
+            function showAlert() {
+                alert('Progetto HOLOS: Gender equality @MIND (2023), Fondazione Triulza');
+            }
+            </script>
+            """
+            , unsafe_allow_html=True)
+        
+        # Call the JavaScript function to display the alert
+        st.markdown('<script>showAlert();</script>', unsafe_allow_html=True)
+
 # Immagine di intestazione presa da un URL di GitHub
 # header_image_url = 'https://raw.githubusercontent.com/NOME_UTENTE/NOME_REPOSITORY/master/immagine.jpg'
 header_image_url = "https://www.mindmilano.it/wp-content/uploads/2022/04/mind_logo_light_blue.svg"

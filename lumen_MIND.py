@@ -56,3 +56,4 @@ elif scelta_pagina == 'Dettaglio azienda':
     st.dataframe(df_azienda_selezionata)
 
 st.text("Dati generati casualmente")
+st.button("Clicca qui per citare questo report")

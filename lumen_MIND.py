@@ -9,19 +9,28 @@ def random_gpg(mean: float, std: float):
 def cite():
     # Add a button to your Streamlit app
     if st.button('Clicca qui per citare questo report'):
-        # When the button is clicked, execute the JavaScript code
-        st.markdown(
-            """ 
-            <script>
-            function showAlert() {
-                alert('Progetto HOLOS: Gender equality @MIND (2023), Fondazione Triulza');
-            }
-            </script>
-            """,
-            unsafe_allow_html=True)
+        # Use st.empty() to create a placeholder
+        placeholder = st.empty()
         
-        # Call the JavaScript function to display the alert
-        st.markdown('<script>showAlert();</script>', unsafe_allow_html=True)
+        # Update the placeholder with the desired content
+        placeholder.success('Progetto HOLOS: Gender equality @MIND (2023), Fondazione Triulza')
+
+
+# def cite():
+    
+#         # When the button is clicked, execute the JavaScript code
+#         st.markdown(
+#             """ 
+#             <script>
+#             function showAlert() {
+#                 alert('Progetto HOLOS: Gender equality @MIND (2023), Fondazione Triulza');
+#             }
+#             </script>
+#             """,
+#             unsafe_allow_html=True)
+        
+#         # Call the JavaScript function to display the alert
+#         st.markdown('<script>showAlert();</script>', unsafe_allow_html=True)
 
 # Immagine di intestazione presa da un URL di GitHub
 # header_image_url = 'https://raw.githubusercontent.com/NOME_UTENTE/NOME_REPOSITORY/master/immagine.jpg'
